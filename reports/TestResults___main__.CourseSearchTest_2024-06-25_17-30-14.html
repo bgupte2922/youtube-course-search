@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-06-25 17:30:14</p>
+                <p class='attribute'><strong>Duration: </strong>31.23 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.CourseSearchTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_01_course_search</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_02_invalid_course_search</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']//span[@title='Selenium with Python Full Course']"}
+  (Session info: chrome=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EF743E32+31618]
+	(No symbol) [0x00007FF6EF6BB099]
+	(No symbol) [0x00007FF6EF57888A]
+	(No symbol) [0x00007FF6EF5C8524]
+	(No symbol) [0x00007FF6EF5C862C]
+	(No symbol) [0x00007FF6EF60F787]
+	(No symbol) [0x00007FF6EF5ED14F]
+	(No symbol) [0x00007FF6EF60CA80]
+	(No symbol) [0x00007FF6EF5ECEB3]
+	(No symbol) [0x00007FF6EF5BA46B]
+	(No symbol) [0x00007FF6EF5BB001]
+	GetHandleVerifier [0x00007FF6EFA49FFD+3202381]
+	GetHandleVerifier [0x00007FF6EFA96A1D+3516269]
+	GetHandleVerifier [0x00007FF6EFA8C490+3473888]
+	GetHandleVerifier [0x00007FF6EF7F5D36+760454]
+	(No symbol) [0x00007FF6EF6C6B3F]
+	(No symbol) [0x00007FF6EF6C1CD4]
+	(No symbol) [0x00007FF6EF6C1E62]
+	(No symbol) [0x00007FF6EF6B120F]
+	BaseThreadInitThunk [0x00007FFEF2EE257D+29]
+	RtlUserThreadStart [0x00007FFEF3E2AF28+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Bhagyashree\workspace_python\YouTubeCourseSearch\Tests\course_search_test.py", line 43, in test_02_invalid_course_search
+    csp.select_course()
+  File "C:\Users\Bhagyashree\workspace_python\YouTubeCourseSearch\Pages\course_search_page.py", line 20, in select_course
+    self.driver.find_element(By.XPATH, self.course_xpath).click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']//span[@title='Selenium with Python Full Course']"}
+  (Session info: chrome=126.0.6478.126); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EF743E32+31618]
+	(No symbol) [0x00007FF6EF6BB099]
+	(No symbol) [0x00007FF6EF57888A]
+	(No symbol) [0x00007FF6EF5C8524]
+	(No symbol) [0x00007FF6EF5C862C]
+	(No symbol) [0x00007FF6EF60F787]
+	(No symbol) [0x00007FF6EF5ED14F]
+	(No symbol) [0x00007FF6EF60CA80]
+	(No symbol) [0x00007FF6EF5ECEB3]
+	(No symbol) [0x00007FF6EF5BA46B]
+	(No symbol) [0x00007FF6EF5BB001]
+	GetHandleVerifier [0x00007FF6EFA49FFD+3202381]
+	GetHandleVerifier [0x00007FF6EFA96A1D+3516269]
+	GetHandleVerifier [0x00007FF6EFA8C490+3473888]
+	GetHandleVerifier [0x00007FF6EF7F5D36+760454]
+	(No symbol) [0x00007FF6EF6C6B3F]
+	(No symbol) [0x00007FF6EF6C1CD4]
+	(No symbol) [0x00007FF6EF6C1E62]
+	(No symbol) [0x00007FF6EF6B120F]
+	BaseThreadInitThunk [0x00007FFEF2EE257D+29]
+	RtlUserThreadStart [0x00007FFEF3E2AF28+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 31.23 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
